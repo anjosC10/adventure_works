@@ -5,4 +5,3 @@ sources:
     description: The sales data system of Adventure Works.
     database: FEA24_9  
     schema: RAW_ADVENTURE_WORKS  
-    tables: 
