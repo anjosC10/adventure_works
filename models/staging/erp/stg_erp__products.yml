@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__products
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw Product table.
+    columns:
+      - name: PK_PRODUCT
+        description: Primary key for the product, used to uniquely identify each product in the table.
+        data_tests:
+          - unique
+          - not_null
+    
+      - name: PRODUCT_NAME
+        description: Name of the product, providing a descriptive label for each product entry.

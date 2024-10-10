@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_products
+    description: Intermediate table that performs data transformation and preparation for the creation of the Products dimension.
+    columns:
+      - name: PK_PRODUCT
+        description: Primary key for the product, used to uniquely identify each product in the table.
+        
+      - name: PRODUCT_NAME
+        description: Name of the product, providing a descriptive label for each product entry.
