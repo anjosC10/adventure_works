@@ -13,3 +13,10 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: address
+        description: Source table with information about addresses.
+        columns:
+          - name: addressid
+            data_tests:
+              - unique
+              - not_null
