@@ -27,3 +27,10 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: countryregion
+        description: Source table with information about countries.
+        columns:
+          - name: countryregioncode
+            data_tests:
+              - unique
+              - not_null
