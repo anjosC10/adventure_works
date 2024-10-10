@@ -8,7 +8,7 @@ with
         select
             cast(ADDRESSID as int) as pk_address
             , cast(STATEPROVINCEID as int) fk_state_province
-            , cast(CITY as varchar) as city_address
+            , cast(CITY as varchar) as address_city
             --, cast(ADDRESSLINE1 as varchar)
             --, cast(ADDRESSLINE2 as varchar)
             --, cast(POSTALCODE as varchar)
