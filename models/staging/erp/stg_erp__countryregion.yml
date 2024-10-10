@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__countryregion
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw CountryRegion table.
+    columns:
+      - name: PK_COUNTRY
+        description: Primary key for the country, used to uniquely identify each country in the table.
+        data_tests:
+          - unique
+          - not_null
+    
+      - name: COUNTRY_NAME
+        description: Name of the country, providing a descriptive label for each country entry.

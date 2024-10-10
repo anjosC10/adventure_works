@@ -13,3 +13,24 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: address
+        description: Source table with information about addresses.
+        columns:
+          - name: addressid
+            data_tests:
+              - unique
+              - not_null
+      - name: stateprovince
+        description: Source table with information about states/provinces.
+        columns:
+          - name: stateprovinceid
+            data_tests:
+              - unique
+              - not_null
+      - name: countryregion
+        description: Source table with information about countries.
+        columns:
+          - name: countryregioncode
+            data_tests:
+              - unique
+              - not_null
