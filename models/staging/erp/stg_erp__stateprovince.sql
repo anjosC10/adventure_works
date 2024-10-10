@@ -7,8 +7,8 @@ with
     , renamed as (
         select
             cast(STATEPROVINCEID as int) as pk_stateprovince
-            , cast(COUNTRYREGIONCODE as varchar) as fk_country
             , cast(TERRITORYID as int) as fk_territory
+            , cast(COUNTRYREGIONCODE as varchar) as fk_country
             , cast(NAME as varchar) as stateprovince_name
             --, cast(STATEPROVINCECODE as varchar)
             --, cast(ISONLYSTATEPROVINCEFLAG as varchar)

@@ -10,6 +10,9 @@ models:
           - unique
           - not_null
     
+      - name: FK_TERRITORY
+        description: Foreign key that links the state/province to its corresponding territory.
+
       - name: FK_COUNTRY
         description: Foreign key that links the state/province to its corresponding country.
 

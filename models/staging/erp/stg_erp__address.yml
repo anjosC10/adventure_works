@@ -13,5 +13,5 @@ models:
       - name: FK_STATE_PROVINCE
         description: Foreign key that links the address to the corresponding state or province, ensuring referential integrity.
 
-      - name: CITY_ADDRESS
+      - name: ADDRESS_CITY
         description: Name of the city associated with the address, providing the city location details.
