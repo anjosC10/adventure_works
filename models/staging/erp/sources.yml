@@ -1,7 +1,15 @@
 version: 2
 
 sources:
-  - name: adventure_works
+  - name: erp_aw
     description: The sales data system of Adventure Works.
     database: FEA24_9  
-    schema: RAW_ADVENTURE_WORKS  
+    schema: RAW_ADVENTURE_WORKS
+    tables:
+      - name: product
+        description: Source table with information about Adventure Works products.
+        columns:
+          - name: productid
+            data_tests:
+              - unique
+              - not_null
