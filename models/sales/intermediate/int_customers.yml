@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_customers
+    description: Intermediate table that performs data transformation and preparation for the creation of the Customers dimension.
+    columns:
+      - name: PK_CUSTOMER
+        description: Primary key that uniquely identifies each customer in the table.
+        data_tests:
+          - unique
+          - not_null
+    
+      - name: FK_PERSON
+        description: Foreign key that links each customer to their corresponding person record.
+
+      - name: FK_STORE
+        description: Foreign key that links each customer to their corresponding store.
+
+      - name: FK_TERRITORY
+        description: Foreign key that links each customer to their corresponding territory.
+
+      - name: STORE_NAME
+        description: Name of the store, providing a descriptive label for each store entry.
+
+      - name: PERSON_NAME
+        description: Name of the person, providing a descriptive label for each person entry.
