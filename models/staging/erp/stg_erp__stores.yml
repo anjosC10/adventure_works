@@ -11,4 +11,4 @@ models:
           - not_null
 
       - name: STORE_NAME
-        description: Foreign key that links each customer to their corresponding store.
+        description: Name of the store, providing a descriptive label for each store entry.
