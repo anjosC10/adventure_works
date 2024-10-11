@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__persons
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw Person table.
+    columns:
+      - name: PK_PERSON
+        description: Primary key that uniquely identifies each person in the table.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PERSON_NAME
+        description: Name of the person, providing a descriptive label for each person entry.

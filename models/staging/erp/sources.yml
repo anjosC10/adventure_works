@@ -34,3 +34,24 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: customer
+        description: Source table with information about customers.
+        columns:
+          - name: customerid
+            data_tests:
+              - unique
+              - not_null
+      - name: store
+        description: Source table with information about stores.
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null
+      - name: person
+        description: Source table with information about persons.
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null
