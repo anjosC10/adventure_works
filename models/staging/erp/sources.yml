@@ -41,3 +41,10 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: store
+        description: Source table with information about stores.
+        columns:
+          - name: storeid
+            data_tests:
+              - unique
+              - not_null
