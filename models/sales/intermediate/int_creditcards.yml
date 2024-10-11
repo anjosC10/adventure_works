@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_creditcards
+    description: Intermediate table that performs data transformation and preparation for the creation of the CreditCards dimension.
+    columns:
+      - name: PK_CREDITCARD
+        description: Primary key that uniquely identifies each credit card in the table.
+
+      - name: CREDITCARD_TYPE
+        description: Type of the credit card, providing a descriptive label for each type entry.
