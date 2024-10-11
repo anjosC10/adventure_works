@@ -56,9 +56,23 @@ sources:
               - unique
               - not_null
       - name: creditcard
-        description: Source table with information about creditcards.
+        description: Source table with information about credit cards.
         columns:
           - name: creditcardid
+            data_tests:
+              - unique
+              - not_null
+      - name: salesorderheadersalesreason
+        description: Source table with information about sales order reasons keys.
+        columns:
+          - name: salesorderid
+            data_tests:
+              - unique
+              - not_null
+      - name: salesreason
+        description: Source table with information about sales order reasons.
+        columns:
+          - name: salesreasonid
             data_tests:
               - unique
               - not_null

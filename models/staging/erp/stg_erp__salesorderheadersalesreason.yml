@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheadersalesreason.
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw SalesReasonOrderHeaderSalesReason table.
+    columns:
+      - name: PK_SALESORDER
+        description: Primary key for the sale order, used to uniquely identify each order in the table.
+        data_tests:
+          - unique
+          - not_null
+    
+      - name: FK_REASON
+        description: Foreign key that links the order to its corresponding reason.
