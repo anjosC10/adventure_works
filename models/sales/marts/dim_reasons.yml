@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_reasons
+    description: Sales Reasons dimension with all the necessary data transformations.
+    columns:
+      - name: PK_SALESORDER
+        description: Primary key for the sale order, used to identify each order in the table.
+    
+      - name: FK_REASON
+        description: Foreign key that links the order to its corresponding reason.
+    
+      - name: REASON_NAME
+        description: Name of the reason, providing a descriptive label for each reason entry.
+
+      - name: REASON_TYPE
+        description: Type of the reason, providing a descriptive label for each reason type entry.

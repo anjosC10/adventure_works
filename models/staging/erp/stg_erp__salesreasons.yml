@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_erp__salesreasons.
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw SalesReason table.
+    columns:
+      - name: PK_REASON
+        description: Primary key for the sale reason, used to uniquely identify each reason in the table.
+        data_tests:
+          - unique
+          - not_null
+    
+      - name: REASON_NAME
+        description: Name of the reason, providing a descriptive label for each reason entry.
+
+      - name: REASON_TYPE
+        description: Type of the reason, providing a descriptive label for each reason type entry.
