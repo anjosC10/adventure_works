@@ -44,7 +44,14 @@ sources:
       - name: store
         description: Source table with information about stores.
         columns:
-          - name: storeid
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null
+      - name: person
+        description: Source table with information about persons.
+        columns:
+          - name: businessentityid
             data_tests:
               - unique
               - not_null
