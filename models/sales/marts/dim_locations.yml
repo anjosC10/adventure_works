@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_locations
-    description: Intermediate table that performs data transformation and preparation for the creation of the Products dimension.
+    description: Locations dimension with all the necessary data transformations.
     columns:
       - name: PK_ADDRESS
         description: Primary key for the product, used to uniquely identify each product in the table.

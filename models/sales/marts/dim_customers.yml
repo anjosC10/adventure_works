@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: dim_customers
-    description: Intermediate table that performs data transformation and preparation for the creation of the Products dimension.
+    description: Customers dimension with all the necessary data transformations.
     columns:
       - name: PK_CUSTOMER
         description: Primary key that uniquely identifies each customer in the table.
