@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: int_locations
-    description: Intermediate table that performs data transformation and preparation for the creation of the Products dimension.
+    description: Intermediate table that performs data transformation and preparation for the creation of the Loctions dimension.
     columns:
       - name: PK_ADDRESS
         description: Primary key for the product, used to uniquely identify each product in the table.
