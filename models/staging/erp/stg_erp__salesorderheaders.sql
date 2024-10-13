@@ -12,8 +12,8 @@ with
             , cast(BILLTOADDRESSID as int) as fk_address
             , cast(CREDITCARDID as int) as fk_creditcard
             , cast(ORDERDATE as date) as order_date
-            , cast(DUEDATE as date) as due_date
-            , cast(SHIPDATE as date) as ship_date
+            , cast(DUEDATE as date) as order_due_date
+            , cast(SHIPDATE as date) as order_ship_date
             , cast(STATUS as int) as order_status
             , case status
                 when 1 then 'In Process'
@@ -24,11 +24,11 @@ with
                 when 6 then 'Cancelled'
                 else 'Unknow'
             end as status_description
-            , cast(SUBTOTAL as decimal(10,2)) as subtotal
-            , cast(TAXAMT as decimal(10,2)) as tax_amount
-            , cast(FREIGHT as decimal(10,2)) as freight
-            , cast(TOTALDUE as decimal(10,2)) as total
-            --, cast(ONLINEORDERFLAG as boolean) as is_onlineorder
+            , cast(SUBTOTAL as decimal(10,2)) as order_subtotal
+            , cast(TAXAMT as decimal(10,2)) as order_tax_amount
+            , cast(FREIGHT as decimal(10,2)) as order_freight
+            , cast(TOTALDUE as decimal(10,2)) as order_total
+            , cast(ONLINEORDERFLAG as boolean) as is_onlineorder
             --, cast(REVISIONNUMBER as varchar)
             --, cast(PURCHASEORDERNUMBER as varchar)
             --, cast(ACCOUNTNUMBER as varchar)
