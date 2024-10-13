@@ -25,10 +25,10 @@ models:
       - name: ORDER_DATE
         description: The date when the sales order was placed.
 
-      - name: DUE_DATE
+      - name: ORDER_DUE_DATE
         description: The date by which the order is expected to be fulfilled.
 
-      - name: SHIP_DATE
+      - name: ORDER_SHIP_DATE
         description: The date when the order was shipped to the customer.
 
       - name: ORDER_STATUS
@@ -37,14 +37,14 @@ models:
       - name: STATUS_DESCRIPTION
         description: Textual description of the order status based on its numeric value.
 
-      - name: SUBTOTAL
+      - name: ORDER_SUBTOTAL
         description: Subtotal amount for the order before taxes and freight, in decimal format.
 
-      - name: TAX_AMOUNT
+      - name: ORDER_TAX_AMOUNT
         description: The amount of tax applied to the sales order.
 
-      - name: FREIGHT
+      - name: ORDER_FREIGHT
         description: Freight cost associated with the order.
 
-      - name: TOTAL
+      - name: ORDER_TOTAL
         description: The total amount due for the order, including taxes and freight.
