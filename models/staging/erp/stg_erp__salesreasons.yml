@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_erp__salesreasons.
+  - name: stg_erp__salesreasons
     description: Staging table that applies basic transformations, such as renaming and casting columns from the raw SalesReason table.
     columns:
       - name: PK_REASON

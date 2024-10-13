@@ -73,3 +73,17 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: salesorderdetail
+        description: Source table with information about sales orders details.
+        columns:
+          - name: salesorderdetailid
+            data_tests:
+              - unique
+              - not_null
+      - name: salesorderheader
+        description: Source table with information about sales orders.
+        columns:
+          - name: salesorderid
+            data_tests:
+              - unique
+              - not_null

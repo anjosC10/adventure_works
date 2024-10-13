@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheaders
+    description: Staging table that applies basic transformations, such as renaming and casting columns from the raw SalesOrderHeader table.
+    columns:
+      - name: PK_ORDER
+        description: Primary key for the sales order, used to uniquely identify each order in the table.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: FK_CUSTOMER
+        description: Foreign key that references the customer associated with the sales order.
+
+      - name: FK_TERRITORY
+        description: Foreign key that identifies the territory linked to the sales order.
+
+      - name: FK_ADDRESS
+        description: Foreign key referencing the billing address for the sales order.
+
+      - name: FK_CREDITCARD
+        description: Foreign key referencing the credit card used for the sales order.
+
+      - name: ORDER_DATE
+        description: The date when the sales order was placed.
+
+      - name: ORDER_DUE_DATE
+        description: The date by which the order is expected to be fulfilled.
+
+      - name: ORDER_SHIP_DATE
+        description: The date when the order was shipped to the customer.
+
+      - name: ORDER_STATUS
+        description: Numeric value representing the status of the order.
+
+      - name: STATUS_DESCRIPTION
+        description: Textual description of the order status based on its numeric value.
+
+      - name: ORDER_SUBTOTAL
+        description: Subtotal amount for the order before taxes and freight, in decimal format.
+
+      - name: ORDER_TAX_AMOUNT
+        description: The amount of tax applied to the sales order.
+
+      - name: ORDER_FREIGHT
+        description: Freight cost associated with the order.
+
+      - name: ORDER_TOTAL
+        description: The total amount due for the order, including taxes and freight.

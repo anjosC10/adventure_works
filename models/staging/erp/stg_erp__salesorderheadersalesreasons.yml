@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_erp__salesorderheadersalesreasons.
+  - name: stg_erp__salesorderheadersalesreasons
     description: Staging table that applies basic transformations, such as renaming and casting columns from the raw SalesReasonOrderHeaderSalesReason table.
     columns:
       - name: PK_SALESORDER
