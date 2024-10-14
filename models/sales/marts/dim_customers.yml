@@ -6,6 +6,9 @@ models:
     columns:
       - name: PK_CUSTOMER
         description: Primary key that uniquely identifies each customer in the table.
+        data_tests:
+          - unique
+          - not_null
 
       - name: FK_PERSON
         description: Foreign key that links each customer to their corresponding person record.

@@ -6,6 +6,9 @@ models:
     columns:
       - name: PK_CREDITCARD
         description: Primary key that uniquely identifies each credit card in the table.
+        data_tests:
+          - unique
+          - not_null
 
       - name: CREDITCARD_TYPE
         description: Type of the credit card, providing a descriptive label for each type entry.

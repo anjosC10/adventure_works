@@ -6,6 +6,9 @@ models:
     columns:
       - name: PK_ADDRESS
         description: Primary key for the product, used to uniquely identify each product in the table.
+        data_tests:
+          - unique
+          - not_null
 
       - name: FK_TERRITORY
         description: Foreign key that links the state/province to its corresponding territory.

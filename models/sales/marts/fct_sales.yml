@@ -10,6 +10,9 @@ models:
     columns:
       - name: PK_ORDERDETAIL
         description: Primary key for each sales order detail, used to uniquely identify individual products in an order.
+        data_tests:
+          - unique
+          - not_null
 
       - name: FK_ORDER
         description: Foreign key referencing the sales order associated with the product detail.
