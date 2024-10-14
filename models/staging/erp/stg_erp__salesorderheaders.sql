@@ -24,10 +24,10 @@ with
                 when 6 then 'Cancelled'
                 else 'Unknow'
             end as status_description
-            , cast(SUBTOTAL as decimal(10,2)) as order_subtotal
-            , cast(TAXAMT as decimal(10,2)) as order_tax_amount
-            , cast(FREIGHT as decimal(10,2)) as order_freight
-            , cast(TOTALDUE as decimal(10,2)) as order_total
+            , cast(SUBTOTAL as numeric(10,4)) as order_subtotal
+            , cast(TAXAMT as numeric(10,4)) as order_tax_amount
+            , cast(FREIGHT as numeric(10,4)) as order_freight
+            , cast(TOTALDUE as numeric(10,4)) as order_total
             , cast(ONLINEORDERFLAG as boolean) as is_onlineorder
             --, cast(REVISIONNUMBER as varchar)
             --, cast(PURCHASEORDERNUMBER as varchar)
