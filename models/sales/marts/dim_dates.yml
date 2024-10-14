@@ -2,43 +2,43 @@ version: 2
 
 models:
   - name: dim_dates
-    description: "Date dimension table providing detailed information for time-based analysis."
+    description: Date dimension table providing detailed information for time-based analysis.
     columns:
       - name: pk_date
-        description: "Primary key representing the specific day in the date dimension."
+        description: Primary key representing the specific day in the date dimension.
         data_tests:
           - not_null
           - unique
 
       - name: day_of_week
-        description: "Numerical value representing the day of the week (1 = Sunday, 7 = Saturday)."
+        description: Numerical value representing the day of the week (1 = Sunday, 7 = Saturday).
 
       - name: day_of_week_name
-        description: "Full name of the day of the week (e.g., 'Monday')."
+        description: Full name of the day of the week (e.g., 'Monday').
 
       - name: day_of_week_name_short
-        description: "Abbreviated name of the day of the week (e.g., 'Mon')."
+        description: Abbreviated name of the day of the week (e.g., 'Mon').
 
       - name: day_of_month
-        description: "Numerical day within the month (1-31)."
+        description: Numerical day within the month (1-31).
 
       - name: day_of_year
-        description: "Day's sequence within the year, ranging from 1 to 365 (or 366 in leap years)."
+        description: Day's sequence within the year, ranging from 1 to 365 (or 366 in leap years).
 
       - name: week_of_year
-        description: "The week number in the year, ranging from 1 to 52/53."
+        description: The week number in the year, ranging from 1 to 52/53.
 
       - name: month_of_year
-        description: "Numerical value representing the month (1 = January, 12 = December)."
+        description: Numerical value representing the month (1 = January, 12 = December).
 
       - name: month_name
-        description: "Full name of the month (e.g., 'January')."
+        description: Full name of the month (e.g., 'January').
 
       - name: month_name_short
-        description: "Abbreviated name of the month (e.g., 'Jan')."
+        description: Abbreviated name of the month (e.g., 'Jan').
 
       - name: quarter_of_year
-        description: "The quarter in which the date falls (1-4)."
+        description: The quarter in which the date falls (1-4).
 
       - name: year_number
-        description: "The year associated with the date (e.g., 2024)."
+        description: The year associated with the date (e.g., 2024).
