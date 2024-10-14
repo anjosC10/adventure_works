@@ -2,13 +2,37 @@ version: 2
 
 models:
   - name: dim_products
-    description: Products dimension with all the necessary data transformations.
+    description: >
+      Dimension that stores product-related information, capturing details about individual products 
+      and their categories. This table serves as a key reference for product-level analysis.
+
     columns:
       - name: PK_PRODUCT
-        description: Primary key for the product, used to uniquely identify each product in the table.
+        description: >
+          Primary key that uniquely identifies each product in the table.
         data_tests:
           - unique
           - not_null
-        
+
+      - name: FK_PRODUCT_CATEGORY
+        description: >
+          Foreign key that links each product to its corresponding category.
+
+      - name: FK_PRODUCT_SUBCATEGORY
+        description: >
+          Foreign key that links each product to its corresponding subcategory, providing deeper 
+          granularity within product categories.
+
       - name: PRODUCT_NAME
-        description: Name of the product, providing a descriptive label for each product entry.
+        description: >
+          Name of the product, providing a descriptive label for each product entry.
+
+      - name: PRODUCT_CATEGORY
+        description: >
+          Descriptive label for the product's category, used to group products into broader 
+          analytical segments.
+
+      - name: PRODUCT_SUBCATEGORY
+        description: >
+          Descriptive label for the product's subcategory, offering a more specific classification 
+          within the broader product category.

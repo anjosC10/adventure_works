@@ -2,28 +2,37 @@ version: 2
 
 models:
   - name: dim_locations
-    description: Locations dimension with all the necessary data transformations.
+    description: >
+      Dimension that contains geographic location details, capturing hierarchical relationships 
+      between addresses, cities, states or provinces, and countries.
     columns:
       - name: PK_ADDRESS
-        description: Primary key for the product, used to uniquely identify each product in the table.
+        description: >
+          Primary key for the product, used to uniquely identify each product in the table.
         data_tests:
           - unique
           - not_null
 
       - name: FK_TERRITORY
-        description: Foreign key that links the state/province to its corresponding territory.
+        description: >
+          Foreign key that links the state/province to its corresponding territory.
 
       - name: FK_STATE_PROVINCE
-        description: Foreign key that links the address to the corresponding state or province, ensuring referential integrity.
+        description: >
+          Foreign key that links the address to the corresponding state or province, ensuring referential integrity.
 
       - name: FK_COUNTRY
-        description: Primary key for the country, used to uniquely identify each country in the table.
+        description: >
+          Primary key for the country, used to uniquely identify each country in the table.
 
       - name: ADDRESS_CITY
-        description: Name of the city associated with the address, providing the city location details.
+        description: >
+          Name of the city associated with the address, providing the city location details.
     
       - name: STATEPROVINCE_NAME
-        description: Name of the state or province, providing a descriptive label for each entry.
+        description: >
+          Name of the state or province, providing a descriptive label for each entry.
 
       - name: COUNTRY_NAME
-        description: Name of the country, providing a descriptive label for each country entry.
+        description: >
+          Name of the country, providing a descriptive label for each country entry.
