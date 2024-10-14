@@ -87,3 +87,17 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: productsubcategory
+        description: Source table with information about products subcategories.
+        columns:
+          - name: productsubcategoryid
+            data_tests:
+              - unique
+              - not_null
+      - name: productcategory
+        description: Source table with information about products categories.
+        columns:
+          - name: productcategoryid
+            data_tests:
+              - unique
+              - not_null
