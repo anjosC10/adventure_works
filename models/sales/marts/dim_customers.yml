@@ -2,22 +2,39 @@ version: 2
 
 models:
   - name: dim_customers
-    description: Customers dimension with all the necessary data transformations.
+    description: >
+      Dimension that contains customer-related information, capturing essential attributes 
+      such as personal details, store associations, and geographic territories.
+
     columns:
       - name: PK_CUSTOMER
-        description: Primary key that uniquely identifies each customer in the table.
+        description: >
+          Primary key that uniquely identifies each customer in the table, ensuring data integrity 
+          and supporting efficient joins with related fact tables.
+        data_tests:
+          - unique
+          - not_null
 
       - name: FK_PERSON
-        description: Foreign key that links each customer to their corresponding person record.
+        description: >
+          Foreign key that links each customer to their corresponding person record, 
+          enabling detailed customer-level analysis.
 
       - name: FK_STORE
-        description: Foreign key that links each customer to their corresponding store.
+        description: >
+          Foreign key that links each customer to their corresponding store, enabling 
+          store-specific reporting and insights.
 
       - name: FK_TERRITORY
-        description: Foreign key that links each customer to their corresponding territory.
+        description: >
+          Foreign key that links each customer to their corresponding territory, supporting 
+          regional segmentation and analysis.
 
       - name: STORE_NAME
-        description: Name of the store, providing a descriptive label for each store entry.
+        description: >
+          Name of the store, providing a descriptive label for each store entry associated 
+          with the customer.
 
       - name: PERSON_NAME
-        description: Name of the person, providing a descriptive label for each person entry.
+        description: >
+          Name of the person, providing a descriptive label for the individual customer.

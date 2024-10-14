@@ -2,10 +2,14 @@ version: 2
 
 models:
   - name: dim_creditcards
-    description: Credit Cards dimension with all the necessary data transformations.
+    description: >
+      Credit Cards dimension that stores information about each credit card used in a order. 
+
     columns:
       - name: PK_CREDITCARD
-        description: Primary key that uniquely identifies each credit card in the table.
+        description: >
+          Primary key that uniquely identifies each credit card in the table. 
 
       - name: CREDITCARD_TYPE
-        description: Type of the credit card, providing a descriptive label for each type entry.
+        description: >
+          Describes the type of credit card, providing a label for each entry.
