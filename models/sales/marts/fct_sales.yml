@@ -3,14 +3,14 @@ version: 2
 models:
   - name: fct_sales
     description: >
-      Fact Sales table that stores transactional data to support the creation of 
-      sales-related metrics. This table consolidates information from the SalesOrderHeader 
+      Fact Sales table that stores transactional data to support the creation of
+      sales-related metrics. This table consolidates information from the SalesOrderHeader
       and SalesOrderDetails tables, providing a unified view of order transactions and details.
 
     columns:
       - name: PK_ORDERDETAIL
         description: >
-          Primary key for each sales order detail, uniquely identifying individual products 
+          Primary key for each sales order detail, uniquely identifying individual products
           within an order.
         data_tests:
           - unique
@@ -38,7 +38,7 @@ models:
 
       - name: FK_ADDRESS
         description: >
-          Foreign key referencing the shipping address linked to the order.
+          Foreign key referencing the billing address linked to the order.
 
       - name: ORDER_DATE
         description: >
@@ -60,22 +60,6 @@ models:
         description: >
           Textual description of the order status, providing additional context.
 
-      - name: ORDER_SUBTOTAL
-        description: >
-          Subtotal amount for the order before taxes and freight charges.
-
-      - name: ORDER_TAX_AMOUNT
-        description: >
-          Total tax amount applied to the order.
-
-      - name: ORDER_FREIGHT
-        description: >
-          Freight or shipping charges associated with the order.
-
-      - name: ORDER_TOTAL
-        description: >
-          Final total amount of the order, including taxes and freight.
-
       - name: QUANTITY
         description: >
           Number of units ordered for the specific product.
@@ -95,6 +79,26 @@ models:
       - name: NET_VALUE
         description: >
           Net value of the product after applying any discounts.
+
+      - name: PRORATED_FREIGHT
+        description: >
+          Portion of the total freight cost allocated to this specific order detail.
+
+      - name: PRORATED_TAX_AMOUNT
+        description: >
+          Portion of the total tax amount allocated to this specific order detail.
+
+      - name: ESTIMATED_PROFIT
+        description: >
+          Estimated profit for the order detail, calculated based on product costs and discounts.
+
+      - name: AVG_ORDER_TICKET_PRODUCT
+        description: >
+          Average value of orders at the product level, useful for analyzing product-level performance.
+
+      - name: AVG_ORDER_TICKET_TOTAL
+        description: >
+          Average total value of orders, providing insight into overall sales performance.
 
       - name: IS_ONLINEORDER
         description: >
