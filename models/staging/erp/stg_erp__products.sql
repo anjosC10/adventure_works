@@ -7,7 +7,6 @@ with
     , renamed as (
         select
             cast(PRODUCTID as int) as pk_product
-            , cast(PRODUCTSUBCATEGORYID as int) as fk_product_subcategory
             , cast(NAME as varchar) as product_name
             --, cast(PRODUCTNUMBER as varchar)
             --, cast(MAKEFLAG as varchar)
@@ -25,6 +24,7 @@ with
             --, cast(PRODUCTLINE as varchar)
             --, cast(CLASS as varchar)
             --, cast(STYLE as varchar)
+            --, cast(PRODUCTSUBCATEGORYID as varchar)
             --, cast(PRODUCTMODELID as varchar)
             --, cast(SELLSTARTDATE as varchar)
             --, cast(SELLENDDATE as varchar)
