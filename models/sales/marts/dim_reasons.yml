@@ -6,6 +6,9 @@ models:
     columns:
       - name: PK_SALESORDER
         description: Primary key for the sale order, used to identify each order in the table.
+        data_tests:
+          - unique
+          - not_null
     
       - name: FK_REASON
         description: Foreign key that links the order to its corresponding reason.
