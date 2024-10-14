@@ -7,7 +7,7 @@ models:
       different categories and specific reasons related to each order.
 
     columns:
-      - name: PK_SALESORDER
+      - name: PK_ORDER
         description: >
           Primary key for the sale order, used to uniquely identify each order in the table.
         data_tests:
