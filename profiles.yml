@@ -1,4 +1,4 @@
-formacao_ae:
+adventure_works:
   outputs:
     dev:
       account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
