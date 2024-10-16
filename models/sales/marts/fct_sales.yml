@@ -88,18 +88,6 @@ models:
         description: >
           Portion of the total tax amount allocated to this specific order detail.
 
-      - name: ESTIMATED_PROFIT
-        description: >
-          Estimated profit for the order detail, calculated based on product costs and discounts.
-
-      - name: AVG_ORDER_TICKET_PRODUCT
-        description: >
-          Average value of orders at the product level, useful for analyzing product-level performance.
-
-      - name: AVG_ORDER_TICKET_TOTAL
-        description: >
-          Average total value of orders, providing insight into overall sales performance.
-
       - name: IS_ONLINEORDER
         description: >
           Boolean flag indicating whether the order was placed online.

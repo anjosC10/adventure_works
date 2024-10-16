@@ -44,30 +44,9 @@ with
             , unit_price * quantity * (1-discount) as net_value
             , order_freight / (count(*) over(partition by fk_order)) as prorated_freight
             , order_tax_amount / (count(*) over(partition by fk_order)) as prorated_tax_amount
-            , (net_value + prorated_freight + prorated_tax_amount) as estimated_profit
         from joined
     )
 
-    , tickets as (
-        select
-            fk_order
-            , sum(net_value) / count(fk_order) as avg_order_ticket_product
-            , sum(estimated_profit) / count(fk_order) as avg_order_ticket_total
-        from metrics
-        group by fk_order
-    )
-
-    , rejoined as (
-        select
-            metrics.*
-            , tickets.avg_order_ticket_product
-            , tickets.avg_order_ticket_total
-        from metrics
-        left join tickets
-            on metrics.fk_order = tickets.fk_order
-    )
-
-    
     , reorder as (
         select
             PK_ORDERDETAIL
@@ -89,11 +68,8 @@ with
             , NET_VALUE
             , PRORATED_FREIGHT
             , PRORATED_TAX_AMOUNT
-            , ESTIMATED_PROFIT
-            , AVG_ORDER_TICKET_PRODUCT
-            , AVG_ORDER_TICKET_TOTAL
             , IS_ONLINEORDER
-        from rejoined
+        from metrics
     )
 
 select *
