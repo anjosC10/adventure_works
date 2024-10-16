@@ -66,6 +66,8 @@ sources:
         description: Source table with information about sales order reasons keys.
         columns:
           - name: salesorderid
+            data_tests:
+              - not_null
       - name: salesreason
         description: Source table with information about sales order reasons.
         columns:
