@@ -46,7 +46,7 @@ with
             , order_tax_amount / (count(*) over(partition by fk_order)) as prorated_tax_amount
         from joined
     )
- 
+
     , reorder as (
         select
             PK_ORDERDETAIL
