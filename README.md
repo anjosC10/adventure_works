@@ -1,15 +1,22 @@
-Welcome to your new dbt project!
+# Adventure Works - Modern Analytics Platform
 
-### Using the starter project
+Welcome to the Adventure Works (AW) dbt project! This project is part of a certification challenge focused on implementing a Modern Analytics Stack for AW, a growing bicycle manufacturer with over 500 products, 20,000 customers, and 31,000 orders.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Overview
 
+The goal of this project is to design and implement a modern analytics platform that allows AW to become a data-driven company. Starting with the sales area, we will model the data to answer key business questions that have been outlined by the leadership team.
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Objectives
+
+- Develop a dimensional data model (fact and dimension tables) that supports strategic decision-making, starting with the sales area.
+- Ensure data accuracy by validating key metrics, such as 2011 gross sales of $12,646,112.16, as requested by the CEO.
+- Guarantee data quality and alignment with audit findings from the finance department.
+- Deliver quick wins to demonstrate the value of the data platform to internal stakeholders.
+  
+## dbt Project Setup
+
+To get started with this dbt project, run the following steps:
+
+- Create your .env file based on .env_example (.env_windows_example if you're using Windows OS) and fill with your informations.
+- Run source .env in command line (if you're using Windows OS, copy and paste your .env file in the command line, will work too).
+- Run dbt debug to check the connection.
