@@ -68,11 +68,8 @@ with
             , NET_VALUE
             , PRORATED_FREIGHT
             , PRORATED_TAX_AMOUNT
-            , ESTIMATED_PROFIT
-            , AVG_ORDER_TICKET_PRODUCT
-            , AVG_ORDER_TICKET_TOTAL
             , IS_ONLINEORDER
-        from rejoined
+        from metrics
     )
 
 select *
