@@ -13,6 +13,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: address
         description: Source table with information about addresses.
         columns:
@@ -20,6 +21,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: stateprovince
         description: Source table with information about states/provinces.
         columns:
@@ -27,6 +29,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: countryregion
         description: Source table with information about countries.
         columns:
@@ -34,6 +37,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: customer
         description: Source table with information about customers.
         columns:
@@ -41,6 +45,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: store
         description: Source table with information about stores.
         columns:
@@ -48,6 +53,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: person
         description: Source table with information about persons.
         columns:
@@ -55,6 +61,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: creditcard
         description: Source table with information about credit cards.
         columns:
@@ -62,10 +69,14 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: salesorderheadersalesreason
         description: Source table with information about sales order reasons keys.
         columns:
           - name: salesorderid
+            data_tests:
+              - not_null
+
       - name: salesreason
         description: Source table with information about sales order reasons.
         columns:
@@ -73,6 +84,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: salesorderdetail
         description: Source table with information about sales orders details.
         columns:
@@ -80,6 +92,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: salesorderheader
         description: Source table with information about sales orders.
         columns:
@@ -87,6 +100,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: productsubcategory
         description: Source table with information about products subcategories.
         columns:
@@ -94,6 +108,7 @@ sources:
             data_tests:
               - unique
               - not_null
+
       - name: productcategory
         description: Source table with information about products categories.
         columns:
