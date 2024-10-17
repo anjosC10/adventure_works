@@ -8,6 +8,7 @@ The goal of this project is to design and implement a modern analytics platform 
 
 ## Objectives
 
+- Built on a data-driven mindset throughout the company.
 - Develop a dimensional data model (fact and dimension tables) that supports strategic decision-making, starting with the sales area.
 - Ensure data accuracy by validating key metrics, such as 2011 gross sales of $12,646,112.16, as requested by the CEO.
 - Guarantee data quality and alignment with audit findings from the finance department.
